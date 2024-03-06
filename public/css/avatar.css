@@ -2,16 +2,6 @@
 	max-width: 1200px;
 	margin: 0px auto;
 }
-
-@media (max-width: 767px) {
-}
-
-@media (max-width: 991px) {
-}
-
-@media (max-width: 480px) {
-}
-
 .underline{
 	position: relative;
 	text-decoration: none !important;
@@ -33,9 +23,7 @@
     justify-content: center;
     align-items: center;
 }
-.navbar-toggler{
-    
-}
+
 .navbar-underline {
     display: flex;
     justify-content: center; /* Alterado de 'spacing-around' para 'center' */
@@ -132,6 +120,14 @@
     color: #FFFFFF;
 }
 
+.btn-teste{
+	background-color: #A90533;
+	padding: 6px;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 600;
+	border-radius: 8px;
+}
 
 
 /* <!-- responsive --> */
@@ -148,6 +144,14 @@
 	}
 }
 
+@media (max-width: 767px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 480px) {
+}
 
 
 
@@ -161,6 +165,5 @@
 
 .gradiente-navbar {
     background: linear-gradient(to bottom, #A90533, #313032);
-
 }
 
