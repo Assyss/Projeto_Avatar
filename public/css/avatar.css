@@ -1,7 +1,8 @@
 .limitador {
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0px auto;
 }
+
 .underline{
 	position: relative;
 	text-decoration: none !important;
@@ -49,7 +50,7 @@
 
 .rodape{
 	background-color: #2F3033;
-	padding: 70px 0;
+	padding: 30px 0;
 } 
 
 .rodape-col{
@@ -120,17 +121,54 @@
     color: #FFFFFF;
 }
 
-.btn-teste{
+.btn-comecar{
 	background-color: #A90533;
-	padding: 6px;
-	text-decoration: none;
+	padding: 12px;
 	color: #FFF;
+	text-decoration: none !important;
+	padding-left: 10px;
 	font-weight: 600;
-	border-radius: 8px;
+	border-radius: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona transform para a transição da escala */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.btn-comecar:hover {
+    background-color: #b3394d; /* Altere a cor de fundo para a cor desejada no hover */
+    color: #FFF; /* Altere a cor do texto para a cor desejada no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
+}
 
-/* <!-- responsive --> */
+.ESPM-red{
+	font-weight: 700;
+	color: #A90533;
+}
+
+.desc-home{
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+.padding-text{
+	padding-top: 90px;
+	padding-left: 30px;
+	padding-bottom: 140px;
+}
+
+.fundinho{
+	color: #FFFFFF;
+	background-color: #a82929;
+	padding-top: 90px;
+	padding-left: 30px;
+	padding-bottom: 140px;
+}
+.img-pessoas1{
+	margin-top: 300px;
+}
+
+/*
+ <!-- responsive --> */
 @media(max-width: 767px){
 	.rodape-col{
 		width: 50%;
@@ -164,6 +202,26 @@
 }
 
 .gradiente-navbar {
-    background: linear-gradient(to bottom, #A90533, #313032);
+    background: linear-gradient(to bottom, #A90533, #1E1E1E);
 }
+
+.centro {
+	text-align: center;
+}
+
+.botao-rodape a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.botao-rodape a:hover {
+    text-decoration: none;
+}
+
+.espaco-icones {
+	margin-right: 10px;
+}
+
+
 
