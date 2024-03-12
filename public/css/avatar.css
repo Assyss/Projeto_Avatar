@@ -33,25 +33,10 @@
     min-width: 500px; /* Ajuste conforme necessário */
 }
 
-.container-rodape{
-	max-width: 1170px;
-	margin: auto;
-}
-
-.container-rodape{
-	max-width: 1170px;
-	margin: auto;
-}
-
 .row-rodape{
 	display: flex;
 	flex-wrap: wrap;
 }
-
-.rodape{
-	background-color: #2F3033;
-	padding: 30px 0;
-} 
 
 .rodape-col{
 	width: 25%;
@@ -121,52 +106,6 @@
     color: #FFFFFF;
 }
 
-.btn-comecar{
-	background-color: #A90533;
-	padding: 12px;
-	color: #FFF;
-	text-decoration: none !important;
-	padding-left: 10px;
-	font-weight: 600;
-	border-radius: 10px;
-	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona transform para a transição da escala */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-comecar:hover {
-    background-color: #b3394d; /* Altere a cor de fundo para a cor desejada no hover */
-    color: #FFF; /* Altere a cor do texto para a cor desejada no hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada no hover */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
-}
-
-.ESPM-red{
-	font-weight: 700;
-	color: #A90533;
-}
-
-.desc-home{
-	padding-bottom: 20px;
-	font-weight: 500;
-}
-
-.padding-text{
-	padding-top: 90px;
-	padding-left: 30px;
-	padding-bottom: 140px;
-}
-
-.fundinho{
-	color: #FFFFFF;
-	background-color: #a82929;
-	padding-top: 90px;
-	padding-left: 30px;
-	padding-bottom: 140px;
-}
-.img-pessoas1{
-	margin-top: 300px;
-}
-
 /*
  <!-- responsive --> */
 @media(max-width: 767px){
@@ -191,22 +130,34 @@
 @media (max-width: 480px) {
 }
 
+/* NavBar */
 
+.gradiente-navbar {
+    background-image: linear-gradient(to bottom, #4A2933, #841233);
+}
 
+/* Rodape */
 
+.rodape {
+	background-color: #A90533;
+	padding: 30px 0;
+} 
 
-
-/* Gragiente Rodape */
 .gradiente-rodape {
     background: linear-gradient(to bottom, #A90533, #313032);
 }
 
-.gradiente-navbar {
-    background: linear-gradient(to bottom, #A90533, #1E1E1E);
+.container-rodape {
+	max-width: 1170px;
+	margin: auto;
 }
 
-.centro {
+.rodape-centro {
 	text-align: center;
+}
+
+.rodape-espaco-icones {
+	margin-right: 10px;
 }
 
 .botao-rodape a {
@@ -219,9 +170,83 @@
     text-decoration: none;
 }
 
-.espaco-icones {
-	margin-right: 10px;
+/* hm-pg1 */
+
+.hm-pg1-espacamento {
+	padding-top: 90px;
+	padding-left: 30px;
+	padding-bottom: 140px;
+}
+
+.hm-pg1-espm-red {
+	font-weight: 700;
+	color: #A90533;
+}
+
+.hm-pg1-desc {
+	font-family: "Manrope", sans-serif;
+	padding-bottom: 20px;
+	font-weight: 500;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.hm-pg1-btn-comecar {
+	background-color: #A90533;
+	padding: 14px;
+	color: #FFF;
+	text-decoration: none !important;
+	padding-left: 10px;
+	font-weight: 600;
+	border-radius: 20px;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona transform para a transição da escala */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hm-pg1-btn-comecar:hover {
+    background-color: #b3394d; /* Altere a cor de fundo para a cor desejada no hover */
+    color: #FFF; /* Altere a cor do texto para a cor desejada no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
+}
+
+.hm-pg1-img-pessoas {
+	margin-top: 0px;
 }
 
 
+/* hm-pg2 */
 
+.hm-pg2-fundo {
+	color: #FFFFFF;
+	background-color: #A90533;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+}
+
+.hm-pg2-desc {
+	font-family: "Manrope", sans-serif;
+	padding-bottom: 20px;
+	font-weight: regular;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+/* hm-pg3 */
+
+.hm-pg3-fundo {
+	color: black;
+	background-color: white;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-bottom: 0px;
+}
+
+.hm-pg3-desc {
+	font-family: "Manrope", sans-serif;
+	padding-bottom: 20px;
+	padding-top: 30px;
+	font-weight: regular;
+	font-size: 30px;
+}
