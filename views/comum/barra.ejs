@@ -1,21 +1,23 @@
-<nav class="navbar navbar-expand-lg gradiente-navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark gradiente-navbar">
   <div>
-    <img class="img-logo" src="../../public/img/logo-navbar.png" />
+    <a href="/">
+      <img src="../../public/img/logo-navbar.png" style="max-width: 100%; height: auto; vertical-align: top;" alt="Logo ESPM"/>
+    </a>
   </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-      aria-controls="navbarToggler" aria-expanded="false" aria-label="Alternar navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+    aria-controls="navbarToggler" aria-expanded="false" aria-label="Alternar navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse background-navbar" id="navbarToggler">
-      <div class="navbar-nav flex-grow-1 navbar-underline">
-        <a class="underline color-text-navbar" href="/">Cursos</a>
-        <a class="underline color-text-navbar" href="/">Questinário</a>
-        <a class="underline color-text-navbar" href="/">Sobre a Espm</a>
-      </div>
-      <div class="navbar-nav">
-        <a class="nav-link btn-publicar-livro" href="/"> Portal ESPM </a>
-      </div>
+  <div class="collapse navbar-collapse background-navbar" id="navbarToggler">
+    <div class="navbar-nav flex-grow-1 navbar-underline">
+      <a class="underline-navbar color-text-navbar" href="../quest/cursos">Cursos</a>
+      <a class="underline-navbar color-text-navbar" href="/">Questinário</a>
+      <a class="underline-navbar color-text-navbar" href="/">Sobre a Espm</a>
     </div>
+    <div class="navbar-nav">
+      <a class="nav-link btn-navbar-portal" href="/"> Portal ESPM </a>
+    </div>
+  </div>
 </nav>
