@@ -5,19 +5,6 @@
 
 /* responsividade  */
 
-@media(max-width: 767px){
-	.rodape-col{
-		width: 50%;
-		margin-bottom: 30px;
-	}
-}
-
-@media(max-width: 574px){
-	.rodape-col{
-		width: 100%;
-	}
-}
-
 @media (max-width: 767px) {
 }
 
@@ -57,10 +44,10 @@
 
 .navbar-underline {
     display: flex;
-    justify-content: center; /* Alterado de 'spacing-around' para 'center' */
+    justify-content: center; 
     margin: auto;
     align-items: center;
-    min-width: 500px; /* Ajuste conforme necessário */
+    min-width: 500px; 
 }
 
 .color-text-navbar {
@@ -139,15 +126,15 @@
 	padding-left: 10px;
 	font-weight: 600;
 	border-radius: 20px;
-	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adiciona transform para a transição da escala */
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hm-pg1-btn-comecar:hover {
-    background-color: #b3394d; /* Altere a cor de fundo para a cor desejada no hover */
-    color: #FFF; /* Altere a cor do texto para a cor desejada no hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais pronunciada no hover */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
+    background-color: #b3394d; 
+    color: #FFF; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
 }
 
 .hm-pg1-img-pessoas {
@@ -248,6 +235,17 @@
     height: auto;
 }
 
+.cursos-texto-cima-desing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .cursos-texto-cima {
     position: absolute;
     top: 50%;
@@ -286,8 +284,67 @@
 }
 
 @media (max-width: 575px) {
+
+	.curso-cima-separacao-desing {
+		margin-bottom: 30px;
+	}
+
+	.cursos-texto-cima-desing {
+		position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        text-align: center;
+	}
+
     .curso-cima-separacao {
 		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.col-sm-12.curso-si-separacao {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .col-sm-12.curso-si-separacao a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .col-sm-12.curso-si-separacao .curso-si-imagem {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-sm-12.curso-si-separacao {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .col-sm-12.curso-si-separacao {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .curso-si-separacao {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .col-sm-12.curso-si-separacao {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+	.curso-si-imagem-separacao {
 		margin-bottom: 30px;
 	}
 }
