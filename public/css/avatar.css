@@ -26,19 +26,18 @@
     align-items: center;
 }
 
-.underline-navbar {
+.animacao-navbar {
 	position: relative;
 	text-decoration: none !important;
 	font-family: 'Poppins', sans-serif;
-	color: #636363;
+	color: white;
 	font-size: 16px;
 	letter-spacing: 0.5px;
 	padding: 0 10px;
 }
 
-.underline-navbar:hover:after {
-	color: #636363;
-	width: 100%;
+.animacao-navbar:hover {
+	color: #EB2557;
 	text-decoration: none !important;
 }
 
@@ -56,7 +55,12 @@
 
 .btn-navbar-portal {
 	color: white;
-	text-decoration: none;
+	text-decoration: none !important;
+}
+
+.btn-navbar-portal:hover {
+	color: #EB2557;
+	text-decoration: none !important;
 }
 
 .navbar-toggler {
@@ -260,8 +264,8 @@
 
 .cursos-container {
     display: flex;
-    justify-content: space-between; /* Garante que os itens fiquem nas extremidades */
-    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .cursos-home-espaco {
@@ -441,4 +445,10 @@
 	.curso-si-imagem-separacao {
 		margin-bottom: 30px;
 	}
+}
+
+@media (min-width: 576px) {
+    .mostrar-mobile {
+        display: none;
+    }
 }
