@@ -97,6 +97,27 @@
     text-decoration: none;
 }
 
+.rodape-icones-animacao {
+	transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.rodape-icones-animacao:hover img {
+	/* filter: hue-rotate(330deg); */
+	filter: invert(100%);
+	color: #EB2557;
+}
+
+.rodape-texto-animacao {
+	text-decoration: none;
+	transition: text-decoration 0.3s;
+}
+
+.rodape-texto-animacao:hover {
+	text-decoration: underline;
+	text-decoration-color: #EB2557;
+}
+
+
 /* hm-pg1 */
 
 .hm-pg1-espacamento {
@@ -209,6 +230,68 @@
 
 /* Pg-Cursos */
 
+.cursos-voltar-espaco {
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.cursos-voltar {
+	background-color: #A90533;
+	padding: 14px;
+	color: #FFF;
+	text-decoration: none !important;
+	padding-left: 10px;
+	font-weight: 600;
+	border-radius: 20px;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cursos-voltar:hover {
+    background-color: #b3394d; 
+    color: #FFF; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+}
+
+.cursos-voltar img {
+    margin-top: -5px; 
+}
+
+.cursos-container {
+    display: flex;
+    justify-content: space-between; /* Garante que os itens fiquem nas extremidades */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.cursos-home-espaco {
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+.cursos-home {
+	background-color: #A90533;
+	padding: 14px;
+	color: #FFF;
+	text-decoration: none !important;
+	padding-left: 10px;
+	font-weight: 600;
+	border-radius: 20px;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cursos-home:hover {
+    background-color: #b3394d; 
+    color: #FFF; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+}
+
+.cursos-home img {
+    margin-top: -5px; 
+}
+
 .cursos-titulo-responsivo {
 	max-width: 200px;
     margin: 0 auto;
@@ -242,7 +325,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
 }
 
@@ -253,7 +336,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
 }
 
@@ -279,9 +362,20 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
 }
+
+.cursos-animacao .cursos-conteudo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.cursos-animacao:hover .cursos-conteudo {
+    /* box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); */
+    transform: scale(1.05);
+    filter: brightness(80%);
+}
+
 
 @media (max-width: 575px) {
 
