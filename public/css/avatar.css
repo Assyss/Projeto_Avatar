@@ -515,7 +515,7 @@
 
 .quali-container {
     display: flex;
-    justify-content: flex-start; /* Alinha os itens ao início do container */
+    justify-content: flex-start; 
     align-items: center;
 }
 
@@ -566,10 +566,69 @@ form {
 }
 
 .quali-container-menor {
-    display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    height: 100vh;
+    /* height: 55vh; */
+    margin: 0 auto; 
+    max-width: 1000px; 
+    box-sizing: border-box;
+}
+
+.quali-espaco-btn {
+    padding-bottom: 20px;
+}
+
+.quali-espaco-lado {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* formulario bolinha */
+
+.questao {
+    margin-bottom: 20px;
+}
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    width: 230px; /* Largura ajustada para manter as bolas próximas */
+}
+.opcao {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.opcao:hover {
+    background-color: #f0f0f0;
+}
+.opcao.selecionada {
+    background-color: #00e1ff;
+    border-width: 4px;
+}
+.opcao.muito-baixa {
+    border-color: #ff0000; /* Vermelho */
+}
+.opcao.baixa {
+    border-color: #ff7f0e; /* Laranja */
+}
+.opcao.media {
+    border-color: #ffbf00; /* Amarelo */
+}
+.opcao.alta {
+    border-color: #7fff00; /* Verde-Limão */
+}
+.opcao.muito-alta {
+    border-color: #00ff00; /* Verde */
+}
+/* Aumentar o tamanho das opções nas extremidades */
+.opcao.muito-baixa, .opcao.muito-alta {
+    width: 30px;
+    height: 30px;
 }
