@@ -527,6 +527,7 @@
     padding: 10px;
     border-radius: 5px;
 }
+
 .quali-checkbox-label {
     margin: 0;
     flex-grow: 1;
@@ -588,30 +589,55 @@ form {
 .questao {
     margin-bottom: 20px;
 }
+
 .opcoes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 230px; /* Largura ajustada para manter as bolas próximas */
+    width: 300px; /* Largura ajustada para manter as bolinhas próximas */
 }
+
 .opcao {
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 2px solid #ccc;
     cursor: pointer;
     padding: 0;
     margin: 0;
 }
+
 .opcao:hover {
     background-color: #f0f0f0;
 }
-.opcao.selecionada {
-    background-color: #333333;
+
+.opcao.selecionada-valor1 {
+    background-color: #FF0000;
     border-width: 2px;
 }
+
+.opcao.selecionada-valor2 {
+    background-color: #FF7F0E;
+    border-width: 2px;
+}
+
+.opcao.selecionada-valor3 {
+    background-color: #FFBF00;
+    border-width: 2px;
+}
+
+.opcao.selecionada-valor4 {
+    background-color: #7FFF00;
+    border-width: 2px;
+}
+
+.opcao.selecionada-valor5 {
+    background-color: #00FF00;
+    border-width: 2px;
+}
+
 .opcao.muito-baixa {
     border-color: #ff0000; /* Vermelho */
 }
@@ -627,8 +653,69 @@ form {
 .opcao.muito-alta {
     border-color: #00ff00; /* Verde */
 }
-/* Aumentar o tamanho das opções nas extremidades */
+
 .opcao.muito-baixa, .opcao.muito-alta {
+    width: 60px;
+    height: 60px;
+}
+
+.opcao.media {
     width: 30px;
     height: 30px;
 }
+
+.opcao.baixa, .opcao.alta {
+    width: 40px;
+    height: 40px;
+}
+
+
+.quali-subtexto {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    color: #2A2A2A;
+}
+
+.quali-linha-fina {
+    border: none; 
+    border-top: 1px solid #2A2A2A; 
+    margin: 20px 0; 
+}
+
+.quali-bolinhas-centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px; 
+    margin: 0 auto;
+}
+
+.quali-texto-negacao, .quali-texto-interessante {
+    display: inline-block;
+    width: 100%; 
+}
+
+.quali-texto-negacao {
+    text-align: left; 
+    margin-left: auto;
+    order: 2;
+    margin-right: 0px;
+}
+
+.quali-texto-interessante {
+    text-align: right;
+    margin-right: auto; 
+    order: 1; 
+    margin-right: 120px;
+}
+
+.quali-texto-container {
+    display: flex;
+    justify-content: center; 
+}
+

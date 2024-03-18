@@ -79,9 +79,15 @@
     </div>
 
     <!-- formulario de bolinha -->
+    <div class="quali-titulo-responsivo">
+        <h1 class="quali-titulo">Avalie seu nível de <span class="quali-texto-vermelho">INTERESSE</span></h1>
+    </div>
 
+    <p class="quali-subtexto">Aprender a linguagem de programação Java.</p>
+
+    <hr class="quali-linha-fina">
+<div class="quali-bolinhas-centro">
     <div class="questao">
-        <p>Aprender a linguagem de programação Java:</p>
         <div class="opcoes">
             <div class="opcao muito-baixa" onclick="selecionarOpcao(this)" name="java" value="1"></div>
             <div class="opcao baixa" onclick="selecionarOpcao(this)" name="java" value="2"></div>
@@ -90,6 +96,13 @@
             <div class="opcao muito-alta" onclick="selecionarOpcao(this)" name="java" value="5"></div>
         </div>
     </div>
+</div>
+
+<div class="quali-texto-container">
+    <div class="quali-texto-negacao">não faz diferença</div>
+    <div class="quali-texto-interessante">muito interessante</div>
+</div>
+
 
     <!-- enviar formulario -->
 
@@ -102,10 +115,35 @@
 <!-- Script para bolinha -->
 <script>
     function selecionarOpcao(opcao) {
-        const opcoes = document.querySelectorAll('.opcao');
-        opcoes.forEach(opt => {
-            opt.classList.remove('selecionada');
-        });
-        opcao.classList.add('selecionada');
+    const opcoes = document.querySelectorAll('.opcao');
+    
+    opcoes.forEach(opt => {
+        opt.classList.remove('selecionada-valor1', 'selecionada-valor2', 'selecionada-valor3', 'selecionada-valor4', 'selecionada-valor5');
+    });
+
+    const valor = parseInt(opcao.getAttribute('value'));
+
+    let cor;
+    switch (valor) {
+        case 1:
+            cor = 'selecionada-valor1';
+            break;
+        case 2:
+            cor = 'selecionada-valor2';
+            break;
+        case 3:
+            cor = 'selecionada-valor3';
+            break;
+        case 4:
+            cor = 'selecionada-valor4';
+            break;
+        case 5:
+            cor = 'selecionada-valor5';
+            break;
+        default:
+            cor = '';
     }
+
+    opcao.classList.add(cor);
+}
 </script>
