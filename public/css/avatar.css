@@ -609,8 +609,8 @@ form {
     background-color: #f0f0f0;
 }
 .opcao.selecionada {
-    background-color: #00e1ff;
-    border-width: 4px;
+    background-color: #333333;
+    border-width: 2px;
 }
 .opcao.muito-baixa {
     border-color: #ff0000; /* Vermelho */
