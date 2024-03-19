@@ -583,7 +583,7 @@ form {
 }
 
 .quali-espaco-btn {
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0; 
     text-align: center;
 }
 
@@ -741,3 +741,13 @@ form {
     justify-content: center; 
 }
 
+.quali-paginas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.quali-paginas-container img {
+    margin: 0 5px; 
+}
