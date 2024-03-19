@@ -173,13 +173,13 @@
 	font-weight: 600;
 	border-radius: 20px;
 	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hm-pg1-btn-comecar:hover {
     background-color: #b3394d; 
     color: #FFF; 
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transform: scale(1.05); 
 }
 
@@ -199,7 +199,6 @@
 
 	.hm-pg1-btn-comecar {
 		text-align: center;
-		
     	margin: 0 auto;
 	}
 
@@ -532,6 +531,7 @@
     margin: 0;
     flex-grow: 1;
 }
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
@@ -541,23 +541,30 @@ input[type="checkbox"] {
     border-radius: 5px;
     margin: 0 0 0 10px;
     align-self: center;
+    cursor: pointer;
 }
+
 input[type="checkbox"]:checked {
     background-color: #333;
 }
+
 input[type="submit"] {
     display: block;
-    margin-top: 20px;
+    margin: 20px auto;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #A90533;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     width: 100%;
+    max-width: 130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
 input[type="submit"]:hover {
-    background-color: #555;
+    background-color: #c51446;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
 }
 
 form {
@@ -577,6 +584,7 @@ form {
 
 .quali-espaco-btn {
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .quali-espaco-lado {
@@ -587,7 +595,7 @@ form {
 /* formulario bolinha */
 
 .questao {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .opcoes {
@@ -614,44 +622,44 @@ form {
 }
 
 .opcao.selecionada-valor1 {
-    background-color: #FF0000;
+    background-color: #da8e8e;
     border-width: 2px;
 }
 
 .opcao.selecionada-valor2 {
-    background-color: #FF7F0E;
+    background-color: #EBABAB;
     border-width: 2px;
 }
 
 .opcao.selecionada-valor3 {
-    background-color: #FFBF00;
+    background-color: #A8A8A8;
     border-width: 2px;
 }
 
 .opcao.selecionada-valor4 {
-    background-color: #7FFF00;
+    background-color: #86B57B;
     border-width: 2px;
 }
 
 .opcao.selecionada-valor5 {
-    background-color: #00FF00;
+    background-color: #6ea861;
     border-width: 2px;
 }
 
 .opcao.muito-baixa {
-    border-color: #ff0000; /* Vermelho */
+    border-color: #da8e8e; /* Vermelho */
 }
 .opcao.baixa {
-    border-color: #ff7f0e; /* Laranja */
+    border-color: #EBABAB; /* Laranja */
 }
 .opcao.media {
-    border-color: #ffbf00; /* Amarelo */
+    border-color: #A8A8A8; /* Amarelo */
 }
 .opcao.alta {
-    border-color: #7fff00; /* Verde-Limão */
+    border-color: #86B57B; /* Verde-Limão */
 }
 .opcao.muito-alta {
-    border-color: #00ff00; /* Verde */
+    border-color: #6ea861; /* Verde */
 }
 
 .opcao.muito-baixa, .opcao.muito-alta {
@@ -678,6 +686,7 @@ form {
     text-align: center;
     padding: 0 10px 0 10px;
     color: #2A2A2A;
+    padding-bottom: 20px;
 }
 
 .quali-linha-fina {
@@ -700,18 +709,31 @@ form {
     width: 100%; 
 }
 
-.quali-texto-negacao {
+.quali-texto-interessante {
+    font-family: "Manrope", sans-serif;
     text-align: left; 
-    margin-left: auto;
+    direction: rtl;
+    /* margin-left: auto; */
     order: 2;
-    margin-right: 0px;
+    margin-right: -10px;
+    color: #86B57B;
+    
+    max-width: 80px;
+    /* margin: 0 auto; */
+    padding: 0 10px 0 10px;
 }
 
-.quali-texto-interessante {
-    text-align: right;
-    margin-right: auto; 
+.quali-texto-negacao {
+    font-family: "Manrope", sans-serif;
+    text-align: left;
+    /* margin-right: auto;  */
     order: 1; 
-    margin-right: 120px;
+    margin-right: 190px;
+    color: #EBABAB;
+
+    max-width: 100px;
+    /* margin: 0 auto; */
+    padding: 0 10px 0 10px;
 }
 
 .quali-texto-container {
