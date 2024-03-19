@@ -24,6 +24,10 @@ class AvatarRoute{
 	public async qualiSI5(req: app.Request, res: app.Response) {
 		res.render("index/qualiSI5");
 	};
+
+	public async erro(req: app.Request, res: app.Response) {
+		res.render("index/erro");
+	};
 }
 
 export = AvatarRoute;
