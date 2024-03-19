@@ -835,6 +835,7 @@ form {
 }
 
 .img-fluid {
+    padding: 10px 10px 0px 10px;
     max-width: 100%;
     height: auto;
     display: block; 
@@ -925,6 +926,7 @@ form {
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 0 10px 0 10px;
 }
 
 .erro-botao:hover {
