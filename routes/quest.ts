@@ -28,6 +28,10 @@ class AvatarRoute{
 	public async erro(req: app.Request, res: app.Response) {
 		res.render("index/erro");
 	};
+
+	public async resultado(req: app.Request, res: app.Response) {
+		res.render("index/resultado");
+	};
 }
 
 export = AvatarRoute;

@@ -813,7 +813,7 @@ form {
     margin: 0 5px;
 }
 
-/* erro */
+/* Pagina de erro */
 
 .maintenance-block {
     min-height: 100vh;
@@ -934,4 +934,56 @@ form {
     color: #FFF;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     transform: scale(1.05);
+}
+
+/* Pagina de Resultado */
+
+.result-container {
+    width: 300px; 
+    padding: 20px; 
+    border-radius: 20px; 
+    background-color: #A90533; 
+    margin: 50px auto; 
+    
+}
+
+.result-subtitulo {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.resultados-titulo {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    color: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.result-imagem {
+    display: inline-block; /* Para garantir que a imagem se alinhe corretamente com o texto */
+    vertical-align: middle; /* Para alinhar verticalmente a imagem com o texto, se necessário */
+    margin-right: 100px; /* Adicionando margem à direita para espaçamento */
+}
+
+.result-compartilhar {
+    background-color: #A90533;
+    padding: 14px;
+    color: #FFF;
+    text-decoration: none !important;
+    padding-left: 10px;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 0 10px 0 10px;
 }

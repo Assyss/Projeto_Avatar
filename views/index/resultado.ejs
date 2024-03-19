@@ -1,0 +1,58 @@
+<div id="result-container" class="result-container">
+    <p class="result-subtitulo">Sua profissão ideal é:</p>
+
+    <h1 class="result-subtitulo">Cientista de Dados</h1>
+    <div class="result-imagem">
+        <img src="../../public/img/result-cd.png" alt="Imagem ">
+    </div>
+
+    <p class="result-subtitulo">Responsável por, a partir de dados armazenados e de necessidades de negócios, criar
+        e enriquecer bases de dados analíticas necessárias.</p>
+
+    <div class="cursos-voltar-espaco">
+        <a href="../../quest/cursos" class="cursos-voltar"><img src="../../public/img/seta-voltar.png"
+                alt="">Voltar</a>
+        <button id="share-button">Compartilhar</button>
+    </div>
+</div>
+
+<!-- Modal de compartilhamento -->
+<div id="share-modal" style="display: none;">
+    <img id="shared-image" style="width: 100%;" alt="Resultado do Quiz">
+    <button id="copy-link">Copiar link da imagem</button>
+    <button id="share-whatsapp">Compartilhar no WhatsApp</button>
+</div>
+
+<script>
+    document.getElementById('share-button').addEventListener('click', function() {
+        // Capturando uma screenshot do contêiner result-container
+        html2canvas(document.getElementById('result-container')).then(function(canvas) {
+            // Convertendo o canvas em uma imagem
+            var image = canvas.toDataURL('image/png');
+
+            // Exibindo a imagem capturada em um modal de compartilhamento
+            var modal = document.getElementById('share-modal');
+            var sharedImage = document.getElementById('shared-image');
+            sharedImage.src = image;
+            modal.style.display = 'block';
+
+            // Lógica para copiar o link da imagem
+            var copyLinkButton = document.getElementById('copy-link');
+            copyLinkButton.addEventListener('click', function() {
+                navigator.clipboard.writeText(image).then(function() {
+                    alert('Link da imagem copiado com sucesso!');
+                }, function() {
+                    alert('Erro ao copiar o link da imagem.');
+                });
+            });
+
+            // Lógica para compartilhar no WhatsApp
+            var shareWhatsappButton = document.getElementById('share-whatsapp');
+            shareWhatsappButton.addEventListener('click', function() {
+                // Abrir link para compartilhar no WhatsApp
+                var whatsappURL = 'whatsapp://send?text=' + encodeURIComponent('Confira meu resultado do quiz: ') + encodeURIComponent(window.location.href);
+                window.open(whatsappURL);
+            });
+        });
+    });
+</script>
