@@ -944,12 +944,24 @@ form {
     border-radius: 20px; 
     background-color: #A90533; 
     margin: 50px auto; 
-    
+
+    /* max-width: 1200px; 
+    height: auto; */
 }
+
+/* .result-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #A90533;
+    margin: 50px auto;
+} */
 
 .result-subtitulo {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
+    font-size: 20px;
     margin: 0 auto;
     text-align: center;
     padding: 0 10px 0 10px;
@@ -961,6 +973,18 @@ form {
 .result-titulo {
     font-family: "Manrope", sans-serif;
     font-weight: 600;
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px 0 10px;
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+.result-texto {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     margin: 0 auto;
     text-align: center;
     padding: 0 10px 0 10px;
@@ -974,8 +998,10 @@ form {
 }
 
 .result-espaco-btn {
-    padding: 20px 0 20px 0;
+    padding: 20px 10px 20px 10px;
     text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 14px;
 }
 
 .result-compartilhar {
@@ -1015,6 +1041,9 @@ form {
 }
 
 .result-espaco-btn-hm {
-    padding: 20px 0 20px 0;
+    padding: 40px 10px 40px 10px;
     text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
 }
