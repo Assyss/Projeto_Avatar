@@ -939,7 +939,7 @@ form {
 /* Pagina de Resultado */
 
 .result-container {
-    width: 300px; 
+    width: 310px; 
     padding: 20px; 
     border-radius: 20px; 
     background-color: #A90533; 
@@ -958,7 +958,7 @@ form {
     padding-bottom: 20px;
 }
 
-.resultados-titulo {
+.result-titulo {
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     margin: 0 auto;
@@ -970,20 +970,51 @@ form {
 }
 
 .result-imagem {
-    display: inline-block; /* Para garantir que a imagem se alinhe corretamente com o texto */
-    vertical-align: middle; /* Para alinhar verticalmente a imagem com o texto, se necessário */
-    margin-right: 100px; /* Adicionando margem à direita para espaçamento */
+    margin-left: -30px;    
+}
+
+.result-espaco-btn {
+    padding: 20px 0 20px 0;
+    text-align: center;
 }
 
 .result-compartilhar {
-    background-color: #A90533;
-    padding: 14px;
-    color: #FFF;
+    background-color: #FFFFFF;
+    padding: 10px;
+    color: #A90533;
     text-decoration: none !important;
-    padding-left: 10px;
+    padding-left: 30px; 
+    padding-right: 30px;
     font-weight: 600;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin: 0 10px 0 10px;
+}
+
+.result-compartilhar:hover {
+    background-color: #ffbbcc;
+    color: #A90533;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+}
+
+.result-seta {
+    margin-top: -3px;
+    margin-right: 5px;
+}
+
+.result-voltar-hm {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.result-voltar-hm:hover {
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.result-espaco-btn-hm {
+    padding: 20px 0 20px 0;
+    text-align: center;
 }
