@@ -999,6 +999,7 @@ form {
 
 .result-espaco-btn {
     padding: 20px 10px 20px 10px;
+    margin: 0 auto;
     text-align: center;
     font-family: "Manrope", sans-serif;
     font-size: 14px;
@@ -1006,6 +1007,7 @@ form {
 
 .result-compartilhar {
     background-color: #FFFFFF;
+    margin: 0 auto;
     padding: 10px;
     color: #A90533;
     text-decoration: none !important;
@@ -1033,6 +1035,7 @@ form {
 .result-voltar-hm {
     color: #FFFFFF;
     text-decoration: none !important;
+    margin: 0 auto;
 }
 
 .result-voltar-hm:hover {
@@ -1043,6 +1046,7 @@ form {
 .result-espaco-btn-hm {
     padding: 40px 10px 40px 10px;
     text-align: center;
+    margin: 0 auto;
     font-family: "Manrope", sans-serif;
     font-size: 17px;
     font-weight: bold;
