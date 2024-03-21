@@ -949,14 +949,38 @@ form {
     height: auto; */
 }
 
-/* .result-container {
-    width: 90%;
-    max-width: 600px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #A90533;
-    margin: 50px auto;
-} */
+@media (max-width: 338px) {
+    .result-container {
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #A90533;
+        margin: 50px auto;
+    }
+
+    .result-imagem {
+        text-align: center; 
+        margin-left: 0; 
+    }
+
+    .result-imagem img {
+        max-width: 50px; 
+        height: auto; 
+        width: 200px;
+    }
+
+    .result-compartilhar {
+        display: block; 
+        margin: 20px auto; 
+        font-size: 14px; 
+        padding: 8px 16px;
+    }
+
+    .result-compartilhar:hover {
+        transform: none; 
+    }
+}
 
 .result-subtitulo {
     font-family: "Manrope", sans-serif;
