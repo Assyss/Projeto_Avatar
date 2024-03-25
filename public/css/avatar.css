@@ -1,6 +1,10 @@
 .limitador {
     max-width: 1400px;
     margin: 0px auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
 
 /* responsividade  */
@@ -15,6 +19,10 @@
 
 .gradiente-navbar {
     background-image: linear-gradient(to bottom, #4A2933, #841233);
+}
+
+.navbar-espaco {
+    padding: 20px 0 20px 20px;
 }
 
 .navbar-nav {
@@ -505,6 +513,12 @@
     }
 }
 
+/* Revisar com o Prof. Rafa */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (min-height: 1024px) and (max-height: 1336px) {
+    .cursos-espaco-tablet {
+        padding-bottom: 500px;
+    }
+}
 
 /* qualiSI */
 
@@ -630,6 +644,13 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
     background-color: #333;
+}
+
+input[type="checkbox"]:checked {
+    background-image: url('../../public/img/vetor-check.png');
+    background-size: 15px 15px; 
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 
 input[type="submit"] {
@@ -848,6 +869,7 @@ form {
 .quali-paginas-container img {
     margin: 0 5px;
 }
+
 
 @media (max-width: 390px) {
     .quali-texto-negacao,
@@ -1135,4 +1157,60 @@ form {
     font-family: "Manrope", sans-serif;
     font-size: 17px;
     font-weight: bold;
+}
+
+/* Estilos para o overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999; 
+    display: none; 
+}
+
+/* Estilos para o modal */
+#modal {
+    position: fixed;
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* colocar o modal sobre o overlay */
+    display: none; /* ocultar inicialmente */
+}
+
+/* Estilos para o botão de fechar */
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.share-icons {
+    text-align: center; /* Centralizar os ícones */
+}
+
+.share-icon-container {
+    display: inline-block; /* Fazer com que os contêineres fiquem um ao lado do outro */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.share-icon-container p {
+    margin: 0; /* Remover margem padrão do parágrafo */
 }
