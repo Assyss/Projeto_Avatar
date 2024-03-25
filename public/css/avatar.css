@@ -143,9 +143,8 @@
 /* hm-pg1 */
 
 .hm-pg1-espacamento {
-    padding-top: 90px;
-    padding-left: 30px;
-    padding-bottom: 140px;
+    padding-top: 70px;
+    padding-bottom: 100px;
 }
 
 .hm-pg1-espm-red {
@@ -182,6 +181,8 @@
 
 .hm-pg1-img-pessoas {
     margin-top: 0px;
+    padding-top: 0px;
+    max-width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -203,13 +204,35 @@
         text-align: center;
     }
 
+    .hm-pg1-titulo-responsivo {
+        max-width: 700px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 10px 0 10px;
+    }
+
+    .hm-pg1-btn-comecar {
+        padding: 18px;
+        padding-left: 10px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+
     .hm-pg1-desc {
         font-size: 20px;
         text-align: center;
+        max-width: 350px;
+        margin: 0 auto;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 30px;
     }
 
     .hm-pg1-img-pessoas {
         text-align: center;
+        padding-left: 30px;
+        padding-top: 10px;
     }
 }
 
@@ -469,6 +492,19 @@
         display: none;
     }
 }
+
+@media (min-width: 720px) and (max-width: 865px) {
+    .cursos-texto-cima {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 720px) {
+    .cursos-texto-cima {
+        font-size: 14px;
+    }
+}
+
 
 /* qualiSI */
 
@@ -811,6 +847,31 @@ form {
 
 .quali-paginas-container img {
     margin: 0 5px;
+}
+
+@media (max-width: 390px) {
+    .quali-texto-negacao,
+    .quali-texto-interessante {
+        width: auto;
+    }
+
+    .quali-texto-negacao {
+        margin-right: 90px; 
+    }
+
+    .quali-texto-interessante {
+        margin-right: -10px; 
+    }
+
+    .opcoes {
+        width: auto; 
+    }
+
+    .opcao {
+        width: 30px; 
+        height: 30px; 
+        margin-right: 5px;
+    }
 }
 
 /* Pagina de erro */
