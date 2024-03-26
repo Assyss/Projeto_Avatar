@@ -17,10 +17,10 @@
     </div>
 </div>
 
-<!-- Adicione um elemento de overlay para escurecer o fundo -->
+<!-- Escurece o fundo -->
 <div id="overlay"></div>
 
-<!-- O conteúdo do modal -->
+<!-- Modal de compartilhamento -->
 <div id="modal">
     <span id="close">&times;</span>
     <p>Compartilhar:</p>
@@ -45,142 +45,120 @@
             <a href="#"><img src="../../public/img/vetor-email.png" alt="Email"></a>
             <p>Email</p>
         </div>
-        <button id="copy-link">Copiar link</button>
     </div>
+    <button id="copy-link">Copiar link</button>
 </div>
 
 <script>
-// Obter referências aos elementos
 var overlay = document.getElementById('overlay');
 var modal = document.getElementById('modal');
 var closeButton = document.getElementById('close');
 
-// Função para abrir o modal
 function openModal() {
     overlay.style.display = 'block';
     modal.style.display = 'block';
 }
 
-// Função para fechar o modal
 function closeModal() {
     overlay.style.display = 'none';
     modal.style.display = 'none';
 }
 
-// Adicionar evento de clique ao botão de compartilhar
 document.querySelector('.result-compartilhar').addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar comportamento padrão do link
-    openModal(); // Abrir o modal quando o botão de compartilhar for clicado
+    event.preventDefault();
+    openModal();
 });
 
-// Adicionar evento de clique ao botão de fechar
 closeButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Evitar comportamento padrão do link
-    closeModal(); // Fechar o modal quando o botão de fechar (x) for clicado
+    event.preventDefault();
+    closeModal();
 });
 
-// Adicionar evento de clique ao overlay para fechar o modal se clicar fora dele
 overlay.addEventListener('click', function(event) {
     if (event.target === overlay) {
-        closeModal(); // Fechar o modal se clicar fora dele
+        closeModal();
     }
 });
 
-//OUTRO CODIGO
-
-// Função para compartilhar via WhatsApp
 function shareViaWhatsApp() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
-    var message = encodeURIComponent("Confira esta imagem: " + imageUrl); // Montar a mensagem de compartilhamento
-    var whatsappUrl = 'https://api.whatsapp.com/send?text=' + message; // Montar o link completo
-    window.open(whatsappUrl); // Abrir o compartilhamento via WhatsApp em uma nova janela
+    var imageUrl = getImageUrl('card-cd.png'); 
+    var message = encodeURIComponent("Confira esta imagem: " + imageUrl); 
+    var whatsappUrl = 'https://api.whatsapp.com/send?text=' + message; 
+    window.open(whatsappUrl); 
 }
 
-// Função para copiar o link da imagem
 function copyImageLink() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
-    var inputElement = document.createElement('input'); // Criar um elemento de input para copiar o texto
+    var imageUrl = getImageUrl('card-cd.png'); 
+    var inputElement = document.createElement('input'); 
     inputElement.setAttribute('type', 'text');
     inputElement.setAttribute('value', imageUrl);
-    document.body.appendChild(inputElement); // Adicionar o elemento ao DOM
+    document.body.appendChild(inputElement);
     inputElement.select();
-    document.execCommand('copy'); // Selecionar e copiar o texto
-    document.body.removeChild(inputElement); // Remover o elemento do DOM
+    document.execCommand('copy');
+    document.body.removeChild(inputElement); 
 }
 
-// Função para compartilhar no Facebook
 function shareViaFacebook() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
+    var imageUrl = getImageUrl('card-cd.png'); 
     var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(imageUrl);
     window.open(facebookUrl);
 }
 
-// Função para compartilhar no Twitter
 function shareViaTwitter() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
+    var imageUrl = getImageUrl('card-cd.png'); 
     var twitterUrl = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent("Confira esta imagem:") + '&url=' + encodeURIComponent(imageUrl);
     window.open(twitterUrl);
 }
 
-// Função para compartilhar no LinkedIn
 function shareViaLinkedIn() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
+    var imageUrl = getImageUrl('card-cd.png'); 
     var linkedinUrl = 'https://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(imageUrl);
     window.open(linkedinUrl);
 }
 
-// Função para compartilhar via E-mail
 function shareViaEmail() {
-    var imageUrl = getImageUrl('card-cd.png'); // Obter a URL da imagem
+    var imageUrl = getImageUrl('card-cd.png'); 
     var emailSubject = encodeURIComponent("Confira esta imagem");
     var emailBody = encodeURIComponent("Veja esta imagem: " + imageUrl);
     var emailUrl = 'mailto:?subject=' + emailSubject + '&body=' + emailBody;
     window.open(emailUrl);
 }
 
-// Função para obter a URL base do site
 function getBaseUrl() {
     return window.location.origin;
 }
 
-// Função para criar a URL completa da imagem
 function getImageUrl(imageName) {
     var baseUrl = getBaseUrl();
-    var imagePath = '/public/img/' + imageName; // Altere o caminho conforme necessário
+    var imagePath = '/public/img/' + imageName; 
     return baseUrl + imagePath;
 }
 
-// Adicionar evento de clique ao botão de compartilhar via WhatsApp
 document.querySelector('.whatsapp a').addEventListener('click', function(event) {
     event.preventDefault();
     shareViaWhatsApp();
 });
 
-// Adicionar evento de clique ao botão de copiar link
 document.getElementById('copy-link').addEventListener('click', function(event) {
     event.preventDefault();
     copyImageLink();
 });
 
-// Adicionar evento de clique ao botão de compartilhar no Facebook
 document.querySelector('.facebook a').addEventListener('click', function(event) {
     event.preventDefault();
     shareViaFacebook();
 });
 
-// Adicionar evento de clique ao botão de compartilhar no Twitter
 document.querySelector('.twitter a').addEventListener('click', function(event) {
     event.preventDefault();
     shareViaTwitter();
 });
 
-// Adicionar evento de clique ao botão de compartilhar no LinkedIn
 document.querySelector('.linkedin a').addEventListener('click', function(event) {
     event.preventDefault();
     shareViaLinkedIn();
 });
 
-// Adicionar evento de clique ao botão de compartilhar via E-mail
 document.querySelector('.email a').addEventListener('click', function(event) {
     event.preventDefault();
     shareViaEmail();
