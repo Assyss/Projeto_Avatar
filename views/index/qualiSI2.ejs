@@ -203,7 +203,7 @@
 <!-- Script para bolinha -->
 <script>
     function selecionarOpcao(opcao) {
-        const opcoes = document.querySelectorAll('.opcao');
+        const opcoes = opcao.parentNode.querySelectorAll('.opcao');
 
         opcoes.forEach(opt => {
             opt.classList.remove('selecionada-valor1', 'selecionada-valor2', 'selecionada-valor3', 'selecionada-valor4', 'selecionada-valor5');
